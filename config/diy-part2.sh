@@ -21,10 +21,12 @@ rm -rf ./package/feeds/packages/mosdns
 rm -rf ./package/feeds/packages/v2ray-geodata
 
 # Add packages
+git clone https://github.com/sbwml/luci-app-alist.git package/luci-app-alist
+git clone https://github.com/messense/aliyundrive-fuse.git package/aliyundrive-fuse/openwrt/luci-app-aliyundrive-fuse
+git clone https://github.com/vernesong/OpenClash.git package/luci-app-openclash
 svn co https://github.com/nantayo/passwall/trunk package/passwall
 svn co https://github.com/ophub/luci-app-amlogic/trunk package/amlogic
 svn co https://github.com/sbwml/luci-app-mosdns/trunk package/mosdns
 svn co https://github.com/sbwml/v2ray-geodata/trunk package/geodata
-svn co https://github.com/kiddin9/openwrt-packages/trunk package/luci-app-openclash
-svn co https://github.com/kiddin9/openwrt-packages/trunk package/luci-app-alist
-svn co https://github.com/kiddin9/openwrt-packages/trunk package/luci-app-aliyundrive-fuse
+
+
